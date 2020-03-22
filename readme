@@ -1,0 +1,7 @@
+ssh onto.fel.cvut.cz
+cd /var/www/onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/[verze]
+copy ttl + vidoco output (keep sections text)
+symlink current to new version
+vim .htaccess and edit RewriteBase to the newest version
+vim /etc/apache2/sites-enabled/000-onto.fel.cvut.cz.conf and check config
+sudo systemctl reload apache2
