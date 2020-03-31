@@ -442,3 +442,36 @@ a-popis-dat-pojem:kontext
 a-popis-dat-pojem:má-datum-a-čas-vytvoření
         a                   <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> ;
         rdfs:subPropertyOf  a-popis-dat-pojem:má-datum-a-čas-modifikace .
+
+a-popis-dat-pojem:změna
+        a       <https://slovník.gov.cz/základní/pojem/typ-události>, owl:Class .
+
+a-popis-dat-pojem:vytvoření-entity
+        a       <https://slovník.gov.cz/základní/pojem/typ-události>, owl:Class ;
+        rdfs:subClassOf a-popis-dat:změna .
+
+
+a-popis-dat-pojem:úprava-entity
+        a       <https://slovník.gov.cz/základní/pojem/typ-události>, owl:Class ;
+        rdfs:subClassOf a-popis-dat:změna .
+
+a-popis-dat-pojem:má-změněnou-entitu
+        a                   owl:ObjectProperty ,  <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         a-popis-dat-pojem:změna ;
+        rdfs:range          <http://onto.fel.cvut.cz/ontologies/ufo/endurant> ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+a-popis-dat-pojem:má-změněný-atribut
+        a                   <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         a-popis-dat-pojem:úprava-entity ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+a-popis-dat-pojem:má-novou-hodnotu
+        a                   <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         a-popis-dat-pojem:úprava-entity ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+a-popis-dat-pojem:má-původní-hodnotu
+        a                   <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         a-popis-dat-pojem:úprava-entity ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .

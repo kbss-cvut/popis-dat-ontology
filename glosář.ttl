@@ -773,3 +773,66 @@ a-popis-dat-pojem:má-datum-a-čas-vytvoření
                 a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Has date and time of creation"@en , "Má datum a čas vytvoření"@cs .
+
+a-popis-dat-pojem:změna
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://slovník.gov.cz/základní/pojem/typ-události> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Change"@en , "Změna"@cs .
+
+a-popis-dat-pojem:vytvoření-entity
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                a-popis-dat-pojem:změna , <https://slovník.gov.cz/základní/pojem/typ-události> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Creation of entity"@en , "Vytvoření entity"@cs .
+
+a-popis-dat-pojem:úprava-entity
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                a-popis-dat-pojem:změna , <https://slovník.gov.cz/základní/pojem/typ-události> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                  "Adjustment of entity"@en , "Úprava entity"@cs .
+
+a-popis-dat-pojem:má-změněnou-entitu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has changed entity"@en , "Má změněnou entitu"@cs .
+
+a-popis-dat-pojem:má-změněný-atribut
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has changed attribute"@en , "Má změněný atribut"@cs .
+
+a-popis-dat-pojem:má-novou-hodnotu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has new value"@en , "Má novou hodnotu"@cs .
+
+a-popis-dat-pojem:má-původní-hodnotu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has original value"@en , "Má původní hodnotu"@cs .                                                                                                
