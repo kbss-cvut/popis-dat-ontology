@@ -448,12 +448,12 @@ a-popis-dat-pojem:změna
 
 a-popis-dat-pojem:vytvoření-entity
         a       <https://slovník.gov.cz/základní/pojem/typ-události>, owl:Class ;
-        rdfs:subClassOf a-popis-dat:změna .
+        rdfs:subClassOf a-popis-dat-pojem:změna .
 
 
 a-popis-dat-pojem:úprava-entity
         a       <https://slovník.gov.cz/základní/pojem/typ-události>, owl:Class ;
-        rdfs:subClassOf a-popis-dat:změna .
+        rdfs:subClassOf a-popis-dat-pojem:změna .
 
 a-popis-dat-pojem:má-změněnou-entitu
         a                   owl:ObjectProperty ,  <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
