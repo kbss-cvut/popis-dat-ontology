@@ -1,9 +1,9 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix a-popis-dat-pojem: <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/> .
+@prefix a-popis-dat-pojem: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix a-popis-dat: <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/> .
+@prefix a-popis-dat: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/> .
 
 a-popis-dat:slovník  a  <https://slovník.gov.cz/veřejný-sektor/pojem/slovník> , owl:Ontology ;
         rdfs:label      "Slovník popis dat - slovník"@cs , "Vocabulary for data description - vocabulary"@en ;
