@@ -1,9 +1,9 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix a-popis-dat-pojem: <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/> .
+@prefix a-popis-dat-pojem: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix a-popis-dat: <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/> .
+@prefix a-popis-dat: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/> .
 
 a-popis-dat-pojem:je-pojmem
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -50,7 +50,7 @@ a-popis-dat-pojem:má-datový-typ
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Has data type"@en , "Má datový typ"@cs .
 
-a-popis-dat:glosář  a   <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <https://slovník.gov.cz/veřejný-sektor/pojem/glosář> , owl:Ontology ;
+a-popis-dat:glosář  a   <http://www.w3.org/2004/02/skos/core#ConceptScheme> , a-popis-dat-pojem:glosář , owl:Ontology ;
         rdfs:label      "Vocabulary for data description - glossary"@en , "Slovník popis dat - glosář"@cs ;
         <http://purl.org/dc/elements/1.1/creator>
                 "Michal Med" ;
@@ -612,6 +612,15 @@ a-popis-dat-pojem:glosář
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Glossary"@en , "Glosář"@cs .
 
+a-popis-dat-pojem:diagram
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://onto.fel.cvut.cz/ontologies/ufo/pojem/object> , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Diagram"@en , "Diagram"@cs .
+
 a-popis-dat-pojem:je-částí-dokumentu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
@@ -835,4 +844,4 @@ a-popis-dat-pojem:má-původní-hodnotu
         <http://www.w3.org/2004/02/skos/core#inScheme>
                 a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
-                "Has original value"@en , "Má původní hodnotu"@cs .                                                                                                
+                "Has original value"@en , "Má původní hodnotu"@cs .
