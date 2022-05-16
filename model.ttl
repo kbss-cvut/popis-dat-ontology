@@ -453,10 +453,7 @@ a-popis-dat-pojem:je-verzí-termu
 a-popis-dat-pojem:má-datum-a-čas-vytvoření-verze
         a                    <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
         rdfs:domain          a-popis-dat-pojem:verze-objektu ;
-        rdfs:subPropertyOf   a-popis-dat-pojem:má-datum-a-čas-modifikace .   
-
-
-
+        rdfs:subPropertyOf   a-popis-dat-pojem:má-datum-a-čas-modifikace .
 
 a-popis-dat-pojem:databázová-tabulka
         a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
