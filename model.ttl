@@ -265,7 +265,7 @@ a-popis-dat-pojem:poskytuje-atribut-záznamu
         rdfs:range          a-popis-dat-pojem:atribut-záznamu ;
         rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
 
-a-popis-dat:model  a    a.popis-dat-pojem:model , owl:Ontology ;
+a-popis-dat:model  a    a-popis-dat-pojem:model , owl:Ontology ;
         rdfs:label      "Vocabulary for data description - model"@en , "Slovník popis dat - model"@cs ;
         <http://purl.org/dc/elements/1.1/creator>
                 "Michal Med" ;
@@ -422,10 +422,41 @@ a-popis-dat-pojem:má-uživatelské-jméno
         rdfs:range          rdfs:Literal ;
         rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vlastnost> .
 
+
+a-popis-dat-pojem:verze-objektu
+        a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        rdf:subClassOf      <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+a-popis-dat-pojem:verze-slovníku
+        a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        rdf:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:slovník .
+
+a-popis-dat-pojem:verze-termu
+        a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        rdf:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:term .
+
 a-popis-dat-pojem:je-verzí
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
-        rdfs:domain         <http://onto.fel.cvut.cz/ontologies/ufo/endurant> ;
-        rdfs:subPropertyOf  <http://onto.fel.cvut.cz/ontologies/ufo/is-snapshot-of> .
+        rdfs:domain         a-popis-dat-pojem:verze-objektu .
+
+a-popis-dat-pojem:je-verzí-slovníku
+        a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:subPropertyOf  a-popis-dat-pojem:je-verzí ;
+        rdfs:domain         a-popis-dat-pojem:verze-slovníku .
+
+a-popis-dat-pojem:je-verzí-termu
+        a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:subPropertyOf  a-popis-dat-pojem:je-verzí ;
+        rdfs:domain         a-popis-dat-pojem:verze-termu .
+
+
+a-popis-dat-pojem:má-datum-a-čas-vytvoření-verze
+        a                    <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain          a-popis-dat-pojem:verze-objektu ;
+        rdfs:subPropertyOf   a-popis-dat-pojem:má-datum-a-čas-modifikace .   
+
+
+
 
 a-popis-dat-pojem:databázová-tabulka
         a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
