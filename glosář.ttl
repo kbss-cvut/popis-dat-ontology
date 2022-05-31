@@ -864,6 +864,24 @@ a-popis-dat-pojem:verze-slovníku
         <http://www.w3.org/2004/02/skos/core#prefLabel>
               "Version of vocabulary"@en , "Verze slovníku"@cs .
 
+a-popis-dat-pojem:verze-modelu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+              a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:model , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+              a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Version of vocabulary"@en , "Verze slovníku"@cs .
+
+a-popis-dat-pojem:verze-glosáře
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+              a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:glosář , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+              a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Version of vocabulary"@en , "Verze slovníku"@cs .
+
 a-popis-dat-pojem:verze-pojmu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
@@ -891,6 +909,24 @@ a-popis-dat-pojem:je-verzí-slovníku
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Is version of vocabulary"@en , "Je verzí slovníku"@cs .
 
+a-popis-dat-pojem:je-verzí-modelu
+      a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#broader>
+              a-popis-dat-pojem:je-verzí , <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme>
+              a-popis-dat:glosář ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "Is version of model"@en , "Je verzí modelu"@cs .
+
+a-popis-dat-pojem:je-verzí-glosáře
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                a-popis-dat-pojem:je-verzí , <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Is version of glossary"@en , "Je verzí glosáře"@cs .
+
 a-popis-dat-pojem:je-verzí-pojmu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
@@ -900,6 +936,23 @@ a-popis-dat-pojem:je-verzí-pojmu
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Is version of term"@en , "Je verzí pojmu"@cs .
 
+a-popis-dat-pojem:má-verzi-glosáře
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                a-popis-dat-pojem:má-glosář , <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has glossary version"@en , "Má verzi glosáře"@cs .
+
+a-popis-dat-pojem:má-verzi-modelu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                a-popis-dat-pojem:má-model , <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has model version"@en , "Má verzi modelu"@cs .
 
 a-popis-dat-pojem:má-datum-a-čas-vytvoření-verze
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
