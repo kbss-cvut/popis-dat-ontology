@@ -871,7 +871,7 @@ a-popis-dat-pojem:verze-modelu
         <http://www.w3.org/2004/02/skos/core#inScheme>
               a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
-              "Version of vocabulary"@en , "Verze slovníku"@cs .
+              "Version of model"@en , "Verze modelu"@cs .
 
 a-popis-dat-pojem:verze-glosáře
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -880,7 +880,7 @@ a-popis-dat-pojem:verze-glosáře
         <http://www.w3.org/2004/02/skos/core#inScheme>
               a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
-              "Version of vocabulary"@en , "Verze slovníku"@cs .
+              "Version of glossary"@en , "Verze glosáře"@cs .
 
 a-popis-dat-pojem:verze-pojmu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
