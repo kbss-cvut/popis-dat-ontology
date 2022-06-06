@@ -425,23 +425,23 @@ a-popis-dat-pojem:má-uživatelské-jméno
 
 a-popis-dat-pojem:verze-objektu
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdf:subClassOf      <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+        rdfs:subClassOf      <http://onto.fel.cvut.cz/ontologies/ufo/object> .
 
 a-popis-dat-pojem:verze-slovníku
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdf:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:slovník .
+        rdfs:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:slovník .
 
 a-popis-dat-pojem:verze-modelu
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdf:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:model .
+        rdfs:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:model .
 
 a-popis-dat-pojem:verze-glosáře
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdf:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:glosář .
+        rdfs:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:glosář .
 
 a-popis-dat-pojem:verze-pojmu
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdf:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:term .
+        rdfs:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:term .
 
 a-popis-dat-pojem:je-verzí
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
