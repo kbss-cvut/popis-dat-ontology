@@ -22,7 +22,7 @@ a-popis-dat:slovník  a  <https://slovník.gov.cz/veřejný-sektor/pojem/slovní
         <http://purl.org/vocab/vann/preferredNamespaceUri>
                 "http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/" ;
         owl:imports     a-popis-dat:model , a-popis-dat:glosář ;
-        owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/slovník/verze/1.0.1> ;
+        owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/slovník/verze/1.0.7> ;
         <https://slovník.gov.cz/veřejný-sektor/pojem/má-glosář>
                 a-popis-dat:glosář ;
         <https://slovník.gov.cz/veřejný-sektor/pojem/má-model>

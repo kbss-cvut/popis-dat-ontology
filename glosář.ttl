@@ -729,15 +729,6 @@ a-popis-dat-pojem:má-uživatelské-jméno
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Has username"@en , "Má uživatelské jméno"@cs .
 
-a-popis-dat-pojem:je-verzí
-        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#broader>
-                <http://onto.fel.cvut.cz/ontologies/ufo/pojem/is-snapshot-of> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
-        <http://www.w3.org/2004/02/skos/core#inScheme>
-                a-popis-dat:glosář ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel>
-                "Is version of"@en , "Je verzí"@cs .
-
 a-popis-dat-pojem:databázová-tabulka
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
