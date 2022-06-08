@@ -67,7 +67,7 @@ a-popis-dat:glosář  a   <http://www.w3.org/2004/02/skos/core#ConceptScheme> , 
         <http://purl.org/vocab/vann/preferredNamespaceUri>
                 "http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/" ;
         owl:imports     <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/1.0.0> ;
-        owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/glosář/verze/1.0.1> .
+        owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/glosář/verze/1.0.7> .
 
 a-popis-dat-pojem:záznam
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;

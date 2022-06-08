@@ -282,7 +282,7 @@ a-popis-dat:model  a    a-popis-dat-pojem:model , owl:Ontology ;
         <http://purl.org/vocab/vann/preferredNamespaceUri>
                 "http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/" ;
         owl:imports     <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/1.0.0> , a-popis-dat:glosář ;
-        owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/model/verze/1.0.1> .
+        owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/model/verze/1.0.7> .
 
 a-popis-dat-pojem:zdroj-datové-sady
         a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
