@@ -39,7 +39,7 @@ a-popis-dat-pojem:má-posledního-editora
         <http://www.w3.org/2004/02/skos/core#inScheme>
                 a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
-                "Má posledního editora\", \"Has last editor"@en .
+                "Má posledního editora"@cs, "Has last editor"@en .
 
 a-popis-dat-pojem:má-datový-typ
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
