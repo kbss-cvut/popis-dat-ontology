@@ -953,3 +953,22 @@ a-popis-dat-pojem:má-datum-a-čas-vytvoření-verze
                 a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Has date and time of version creation"@en , "Má datum a čas vytvoření verze"@cs .
+
+a-popis-dat-pojem:stav-pojmu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+              a-popis-dat-pojem:term , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+              a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+              "State of term"@en , "Stav pojmu"@cs .
+
+a-popis-dat-pojem:má-stav-pojmu
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://slovník.gov.cz/základní/pojem/vztah> , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Has term state"@en , "Má stav pojmu"@cs .
+
