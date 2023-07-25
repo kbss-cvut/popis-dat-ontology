@@ -536,3 +536,13 @@ a-popis-dat-pojem:má-původní-hodnotu
         a                   <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
         rdfs:domain         a-popis-dat-pojem:úprava-entity ;
         rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+a-popis-dat-pojem:stav-pojmu
+        a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        rdfs:subClassOf     a-popis-dat-pojem:term .
+
+a-popis-dat-pojem:má-stav-pojmu
+        a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:range          a-popis-dat-pojem:stav-pojmu .
+
