@@ -7,7 +7,7 @@
 
 a-popis-dat-pojem:je-pojmem
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
-        rdfs:domain         a-popis-dat-pojem:term ;
+        rdfs:domain         <http://www.w3.org/2004/02/skos/core#Concept> ;
         rdfs:subPropertyOf  a-popis-dat-pojem:je-záznamem .
 
 a-popis-dat-pojem:číselník
@@ -105,10 +105,6 @@ a-popis-dat-pojem:má-číselníkovou-hodnotu
         rdfs:domain         a-popis-dat-pojem:číselník ;
         rdfs:range          a-popis-dat-pojem:číselníková-hodnota ;
         rdfs:subPropertyOf  a-popis-dat-pojem:má-atribut-databázové-tabulky .
-
-a-popis-dat-pojem:term
-        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdfs:subClassOf  a-popis-dat-pojem:záznam .
 
 a-popis-dat-pojem:je-pojmem-ze-slovníku
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
@@ -216,7 +212,7 @@ a-popis-dat-pojem:dokument-legislativní-povahy
 
 a-popis-dat-pojem:atribut-záznamu
         a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdfs:subClassOf  a-popis-dat-pojem:term , a-popis-dat-pojem:atribut .
+        rdfs:subClassOf  <http://www.w3.org/2004/02/skos/core#Concept> , a-popis-dat-pojem:atribut .
 
 <http://onto.fel.cvut.cz/ontologies/ufo/trope>
         a       owl:Class .
@@ -323,7 +319,7 @@ a-popis-dat-pojem:obsahuje-kořenový-pojem
 a-popis-dat-pojem:obsahuje-pojem
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
         rdfs:domain         a-popis-dat-pojem:glosář ;
-        rdfs:range          a-popis-dat-pojem:term ;
+        rdfs:range          <http://www.w3.org/2004/02/skos/core#Concept> ;
         owl:inverseOf       <http://www.w3.org/2004/02/skos/core#inScheme>;
         rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
 
@@ -441,7 +437,7 @@ a-popis-dat-pojem:verze-glosáře
 
 a-popis-dat-pojem:verze-pojmu
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdfs:subClassOf      a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:term .
+        rdfs:subClassOf      a-popis-dat-pojem:verze-objektu , <http://www.w3.org/2004/02/skos/core#Concept> .
 
 a-popis-dat-pojem:je-verzí
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
@@ -539,7 +535,7 @@ a-popis-dat-pojem:má-původní-hodnotu
 
 a-popis-dat-pojem:stav-pojmu
         a                   <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
-        rdfs:subClassOf     a-popis-dat-pojem:term .
+        rdfs:subClassOf     <http://www.w3.org/2004/02/skos/core#Concept> .
 
 a-popis-dat-pojem:má-stav-pojmu
         a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;

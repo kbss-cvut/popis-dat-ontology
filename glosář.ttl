@@ -213,15 +213,6 @@ a-popis-dat-pojem:má-číselníkovou-hodnotu
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Has codelist value"@en , "Má číselníkovou hodnotu"@cs .
 
-a-popis-dat-pojem:term
-        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#broader>
-                a-popis-dat-pojem:záznam , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
-        <http://www.w3.org/2004/02/skos/core#inScheme>
-                a-popis-dat:glosář ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel>
-                "Term"@en , "Term"@cs .
-
 a-popis-dat-pojem:je-pojmem-ze-slovníku
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
@@ -414,7 +405,7 @@ a-popis-dat-pojem:dokument-legislativní-povahy
 a-popis-dat-pojem:atribut-záznamu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
-                a-popis-dat-pojem:term , a-popis-dat-pojem:atribut , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+                a-popis-dat-pojem:atribut , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
         <http://www.w3.org/2004/02/skos/core#inScheme>
                 a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
@@ -876,7 +867,7 @@ a-popis-dat-pojem:verze-glosáře
 a-popis-dat-pojem:verze-pojmu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
-              a-popis-dat-pojem:verze-objektu , a-popis-dat-pojem:term , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+              a-popis-dat-pojem:verze-objektu , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
         <http://www.w3.org/2004/02/skos/core#inScheme>
               a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
@@ -957,7 +948,7 @@ a-popis-dat-pojem:má-datum-a-čas-vytvoření-verze
 a-popis-dat-pojem:stav-pojmu
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
-              a-popis-dat-pojem:term , <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
+              <https://slovník.gov.cz/základní/pojem/typ-objektu> ;
         <http://www.w3.org/2004/02/skos/core#inScheme>
               a-popis-dat:glosář ;
         <http://www.w3.org/2004/02/skos/core#prefLabel>
