@@ -783,6 +783,15 @@ a-popis-dat-pojem:vytvoření-entity
         <http://www.w3.org/2004/02/skos/core#prefLabel>
                 "Creation of entity"@en , "Vytvoření entity"@cs .
 
+a-popis-dat-pojem:smazání-entity
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                a-popis-dat-pojem:změna , <https://slovník.gov.cz/základní/pojem/typ-události> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                a-popis-dat:glosář ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Deletion of entity"@en , "Smazání entity"@cs .
+
 a-popis-dat-pojem:úprava-entity
         a       <http://www.w3.org/2004/02/skos/core#Concept> ;
         <http://www.w3.org/2004/02/skos/core#broader>
